@@ -32,26 +32,34 @@ layers:
   passThrough: true
 
 - name: alt
-  passThrough: false
+  passThrough: true
   bindings:
     j: layer aim
     comma: layer mouse
-    e: down
-    w: up
-    q: right
-    r: left
-    apostrophe: enter
+    leftshift: leftshift
     k: leftalt+k
     slash: multi leftalt; slash
-    i: esc
+    apostrophe: enter
+    i: down
+    o: up
+    p: right
+    u: left
+    k9: pagedown
+    k8: home
+    minus: end
+    k0: pageup
     m: leftalt+m
     t: rightalt+t
     y: leftalt+y
-    u: multi leftalt+u; layer active
+    t: leftalt+t
+  # u: multi leftalt+u; layer active
     h: leftalt+h
     l: leftalt+l
     semicolon: leftalt+semicolon
-    o: leftalt+o
+    w: delete
+    q: leftctrl+delete
+    e: backspace
+    r: leftctrl+backspace
     
     # !!!!!!! It is not possible to switch to the meta layer because the "alt" layer was called using "toggle-layer", not "layer". :(
     leftmeta: toggle-layer meta
